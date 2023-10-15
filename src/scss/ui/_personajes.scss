@@ -1,0 +1,54 @@
+@use '/src/scss/base/variables' as v;
+@use '/src/scss/base/mixins' as m;
+
+.contenedorps {
+  
+    @include m.flex(flex, column, space-between, center);
+
+    &__h1ps {
+        text-align: center;
+        color: v.$gris;
+        margin: 15rem 0 6rem 0;
+    }
+
+    &__listaper {
+        width: 90%;
+    }
+
+    animation-name: paginas;
+    animation-iteration-count:initial;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+}
+
+@keyframes paginas {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+.personajep {
+    
+       padding-bottom: 4rem;
+    
+        &__name {
+            font-size: 2rem;
+            text-align: center;
+            color: v.$gris;
+            margin: 2rem 0;
+        }
+    
+        &__foto {
+            border-radius: 50%;
+            margin: 0 auto;
+            width: 70%;
+        }
+    
+    }
+    
+    

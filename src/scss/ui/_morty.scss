@@ -1,0 +1,85 @@
+@use '/src/scss/base/variables' as v;
+@use '/src/scss/base/mixins' as m;
+
+.contenedorm {
+    
+    height: 100%;
+    display: flex;
+    justify-content: end;
+
+    animation-name: morty;
+    animation-iteration-count:initial;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+
+    @include m.tablet {
+        height: 100vh;
+    }
+}
+
+@keyframes morty {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+.morty {
+  
+    @include m.grid(1, 1fr);
+    align-content: center;
+
+    @include m.tablet {
+        @include m.grid(2, 1fr);
+    }
+
+    &__imagenm {
+        width: 100%;
+    }
+    &__imgm {
+        margin: 12rem 0 0 3rem;
+        width: 45%;
+    }
+
+    &__parrafom {
+        font-size: 1.6rem;
+        margin: 3rem 0 3rem 0;
+        color: v.$blanco;
+        font-weight: 300;
+    }
+
+    &__h2m {
+        font-size: 2rem;
+        color: v.$gris;
+    }
+
+    &__textosm {
+       padding: 2rem;
+
+       @include m.tablet {
+        padding: 10rem 2rem 3rem 2rem;
+       }
+    }
+}
+
+
+.tablam {
+        width: 60%;
+        
+        &__h3m {
+            font-size: 1.6rem;
+            color: v.$rojo;
+            font-weight: 500;
+        }
+    
+        &__spanm {
+            font-size: 1.6rem;
+            color: v.$blanco;
+            font-weight: 300;
+        }
+}
+

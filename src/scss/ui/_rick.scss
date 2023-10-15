@@ -1,0 +1,84 @@
+@use '/src/scss/base/variables' as v;
+@use '/src/scss/base/mixins' as m;
+
+.contenedorr {
+    
+    height: 100%;
+    display: flex;
+    justify-content: end;
+
+    animation-name: ricky;
+    animation-iteration-count:initial;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+
+    @include m.tablet {
+        height: 100vh;
+    }
+}
+
+@keyframes ricky {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+.rick {
+
+    @include m.grid(1, 1fr);
+    align-content: center;
+
+    @include m.tablet {
+        @include m.grid(2, 1fr);
+    }
+
+    &__imagenr {
+        width: 100%;
+    }
+    &__imgr {
+        margin: 12rem 0 0 3rem;
+        width: 60%;
+    }
+    &__parrafor{
+        font-size: 1.6rem;
+        margin: 3rem 0 3rem 0;
+        color: v.$blanco;
+        font-weight: 300;
+    }
+
+    &__h2r {
+        font-size: 3rem;
+        color: v.$gris;
+    }
+
+    &__textosr {
+         padding: 2rem;
+
+         @include m.tablet {
+            padding: 10rem 2rem 3rem 2rem;
+         }
+    }
+
+    .tablar {
+        width: 60%;
+
+        &__h3r {
+            font-size: 1.6rem;
+            color: v.$rojo;
+            font-weight: 500;
+        }
+    
+        &__spanr {
+            font-size: 1.6rem;
+            color: v.$blanco;
+            font-weight: 300;
+        }
+    }
+
+ 
+}

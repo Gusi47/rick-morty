@@ -1,0 +1,23 @@
+@use '/src/scss/base/variables' as v;
+@use '/src/scss/base/mixins' as m;
+
+.contenedorl {
+    width: 90%;
+    margin: 0 auto;
+    @include m.flex(flex, column, space-between, center);
+}
+
+
+.contebtn {
+    @include m.flex(flex, column, space-between, center);
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.listapersonaje {
+    @include m.grid(1, 1fr);
+    gap: 2rem;
+    @include m.tablet {
+        @include m.grid(4, 1fr);
+    }
+  }

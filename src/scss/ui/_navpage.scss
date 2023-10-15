@@ -1,0 +1,34 @@
+@use '/src/scss/base/variables' as v;
+@use '/src/scss/base/mixins' as m;
+
+.boton {
+    width: 90%;
+    @include m.flex(flex, column, space-between, center);
+
+    &__parra {
+        font-size: 3rem;
+        color: v.$gris;
+        margin: 4rem 2rem;
+    }
+
+}
+
+.contenedorbtn {
+    width: 100%;
+    height: 5rem;
+    @include m.flex(flex, row, space-between, center);
+
+    &__btn {
+       
+        padding: 1rem;
+        border-radius: .5rem;
+        transition: 300ms;
+        cursor: pointer;
+
+        &:hover {
+            
+            background-color:  v.$blanco;
+            transform: scale(1.1);
+        }
+    }
+}

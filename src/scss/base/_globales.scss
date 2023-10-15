@@ -1,0 +1,33 @@
+@use '/src/scss/base/variables' as v;
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: v.$fuente-principal;
+    margin: 0;
+    font-size: 1.6rem;
+    background-color: v.$negro;
+  }
+  
+  a {
+  list-style: none;
+  text-decoration: none;
+  }
+
+  p, h1, h2, h3, h4, h5 ,h6 {
+    margin: 0;
+   
+  }
+  
+  img {
+  display: block;
+  }
+  

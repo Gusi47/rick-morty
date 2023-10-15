@@ -1,0 +1,13 @@
+@use '../base/variables' as v;
+
+.hiddem {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.active {
+    color: v.$rojo;
+}
